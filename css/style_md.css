@@ -34,11 +34,14 @@
   .content_case{
     font-size: 0;
     min-height: calc(100vh - 80px);
+    position: relative;
   }
   .navigation{
     padding: 10px;
     height: 100%;
     min-height: calc(100vh - 80px);
+    position: absolute;
+    left: 0;
     width: 280px;
     box-sizing: border-box;
     display: inline-block!important;
@@ -48,14 +51,21 @@
     display: inline-block;
     vertical-align: top;
     width: calc(100vw - 280px);
+    width: 100%;
+  }
+  .content_inner>div{
+    margin-left: 280px;
+    min-height: calc(100vh - 80px);
     border-left: 1px solid #EBEBEB;
   }
-  .content_text{
-    padding: 30px 200px 100px 200px;
+  .content_text>div,.headline{
+    max-width: 1280px;
+    width: 85%;
+    margin: 0 auto;
+    min-height: 100%;
   }
   .headline{
-    margin-top: 0;
-    padding-top: 0;
+    margin-bottom: 80px;
     padding-left: 0;
   }
   .headline:after{
