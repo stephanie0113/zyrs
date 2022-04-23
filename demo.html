@@ -6,25 +6,169 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
 	<meta content="telephone=no,email=no" name="format-detection" />
-	<title></title> 
+	<title></title>
 	<link rel="stylesheet" href="css/base/bootstrap.css" />
 	<link rel="stylesheet" href="css/reset.css" />
 	<link rel="stylesheet" href="css/style_xs.css" />
 	<link rel="stylesheet" href="css/style_sm.css" />
-	<link rel="stylesheet" href="css/style_md.css" />	
+	<link rel="stylesheet" href="css/style_md.css" />
 </head>
 <body>
 	 <div class="wrap">
-		<div class="boxshadow" style="width:80%">
-			ddddd
-		</div>
-		<div class="btn_bg" style="height: 30px; width: 100px;line-height: 30px; text-align: center;">按钮样式</div>
+     <div class="container-fluid  ">
+       <div class="row showDond">
+         <div class="col-xs-12 clearfix headerCase active">
+           <div class="left hidden-md hidden-lg">
+             <img class="togoNav" src="images/ContactUs/icon_nav.png" alt="">
+             <img class="togoNav"  style="display: none" src="images/header/icon_X.png" alt="">
+           </div>
+           <img class="logo" src="images/ContactUs/icon_logo_md.png" alt="">
+           <div class="right hidden-md hidden-lg">
+             <img src="images/ContactUs/icon_notice.png" alt="">
+           </div>
+           <ul class="md_right fr hidden-xs hidden-sm">
+             <li>
+               <img src="images/ContactUs/icon_user.png" alt="">
+             </li>
+             <li>
+               <img src="images/ContactUs/icon_notice.png" alt="">
+             </li>
+             <li class="language">
+               <i class="active">繁</i>
+             </li>
+             <li class="language">
+               <i>EN</i>
+             </li>
+             <li style="margin-right: 0">
+               <div class="temp_btn">登出</div>
+             </li>
+           </ul>
+         </div>
+       </div>
+       <div class="row">
+         <div class="col-xs-12 content_case">
+           <div class="navigation">
+             <ul>
+               <li class="clas_a has_ol">
+                 <div class="licase">
+                   <img src="images/header/icon_policy.png" alt="">
+                   <span>我的保單</span>
+                   <img class="right_icon" src="images/header/icon_arrow.png" alt="">
+                 </div>
+                 <ol class="right_case">
+                   <li class="clas_b">
+                     <div class="licase licase2">
+                       <img src="images/header/icon_bill.png" alt="">
+                       <span>保單概覽</span>
+                     </div>
+                   </li>
+                   <li class="clas_b">
+                     <div class="licase licase2">
+                       <img src="images/header/icon_settlement.png" alt="">
+                       <span>查閱通知書及結單</span>
+                     </div>
+                   </li>
+                 </ol>
+               </li>
+               <li class="clas_a has_ol">
+                 <div class="licase">
+                   <img src="images/header/icon_claims.png" alt="">
+                   <span>理賠服務</span>
+                   <img class="right_icon" src="images/header/icon_arrow.png" alt="">
+                 </div>
+                 <ol class="right_case">
+                   <li class="clas_b">
+                     <div class="licase licase2">
+                       <img src="images/header/icon_list.png" alt="">
+                       <span>理賠清單</span>
+                     </div>
+                   </li>
+                   <li class="clas_b">
+                     <div class="licase licase2">
+                       <img src="images/header/icon_e.png" alt="">
+                       <span>e站通</span>
+                     </div>
+                   </li>
+                 </ol>
+               </li>
+               <li class="clas_a">
+                 <div class="licase">
+                   <img src="images/header/icon_table.png" alt="">
+                   <span>常用表格下載</span>
+                 </div>
+               </li>
+               <li class="clas_a">
+                 <div class="licase">
+                   <img src="images/header/icon_contact.png" alt="">
+                   <span>聯絡我們</span>
+                 </div>
+               </li>
+               <li class="clas_a">
+                 <div class="licase">
+                   <img src="images/header/icon_msg.png" alt="">
+                   <span>訊息中心</span>
+                 </div>
+               </li>
+               <li class="clas_a">
+                 <div class="licase">
+                   <img src="images/header/icon_psw.png" alt="">
+                   <span>更改密碼</span>
+                 </div>
+               </li>
+             </ul>
+             <div class="operation hidden-md hidden-lg">
+               <div class="case clearfix">
+                 <img class="fl" src="images/ContactUs/icon_user.png" alt="">
+                 <div class="fr">
+                   <span class="active">繁</span>
+                   <span>EN</span>
+                 </div>
+               </div>
+               <div class="temp_btn">登出</div>
+             </div>
+           </div>
+           <div class="content_inner">
+             <div class="tipCase">
+               <img src="images/ContactUs/img_tip.png" alt=""></i>
+               <p>
+                 如果您有任何查詢或建議，
+                 歡迎透過以下渠道與我們聯絡。
+               </p>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
 	 </div>
 
 
 
-	
+
 <script src="js/jq.js"></script>
-<script src="js/main.js"></script> 
+<script src="js/main.js"></script>
+ <script>
+   $(".togoNav").click(function (){
+     $('.navigation').toggle(300)
+     $(this).hide().siblings().show()
+     // $(this).parents('.row').toggleClass('showDond')
+   })
+   $('.operation').on('click','span',function (){
+     $(this).addClass('active').siblings().removeClass('active')
+   })
+  $('.md_right').on('click','.language',function (){
+    $(this).find('i').addClass('active').parent().siblings().find('i').removeClass('active')
+  })
+   $(".navigation").on('click','.clas_a',function (){
+     if($(this).hasClass('has_ol')) {
+       $(this).find('.right_case').toggle(300)
+       $(this).siblings().find('.right_case').hide(300)
+     } else {
+       $(this).addClass('active').siblings().removeClass('active').find('.clas_b').removeClass('active').parents('.right_case').hide(300)
+     }
+   }).on('click','.clas_b',function (e){
+     e.stopPropagation();
+     $(this).addClass('active').siblings().removeClass('active').parents('.clas_a').siblings().removeClass('active').find('.clas_b').removeClass('active')
+   })
+ </script>
 </body>
 </html>

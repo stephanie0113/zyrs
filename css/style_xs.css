@@ -1,0 +1,123 @@
+/*头部*/
+.headerCase{
+  padding-top: 13px;
+  padding-bottom: 13px;
+  position: relative;
+  font-size: 0;
+}
+.showDond{
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+.headerCase .logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 107px;
+  height: 34px;
+}
+.headerCase>div{
+  width: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 34px;
+}
+
+.headerCase .right{
+  text-align: right;
+}
+.headerCase img{
+  display: inline-block;
+}
+.tipCase{
+  position: relative;
+  padding: 0;
+  margin-bottom: 60px;
+}
+.tipCase > p{
+  background: linear-gradient(to right, #db2a40, #a71e2f);
+  padding: 16px 30px 16px 150px;
+  color: #fff;
+  font-size: 14px;
+}
+.tipCase img{
+  position: absolute;
+  left: 15px;
+  top: 20px;
+  width: 122px;
+  height: 95px;
+}
+.navigation{
+  padding: 0 20px;
+  display: none;
+}
+.navigation ul .licase{
+  padding: 15px 8px 15px 30px;
+  color: #5c5c5c;
+  position: relative;
+}
+.navigation ul .licase .right_icon{
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg);
+}
+.navigation ul .licase2{
+  padding: 15px 8px 15px 56px;
+}
+.navigation ul .active{
+  background: #f9f0f2;
+  border-radius: 10px;
+  color: #6d1414;
+}
+.navigation ul .active span{
+  color: #6d1414;
+}
+.navigation ul .licase image{
+  display: inline-block;
+  vertical-align: middle;
+}
+.navigation ul .licase span{
+  font-size: 16px;
+  line-height: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+.content_case{
+  padding: 0;
+}
+.right_case{
+  display: none;
+}
+.temp_btn{
+  border: 1px solid #a71e2f;
+  color: #a71e2f;
+  font-size: 16px;
+  width: 120px;
+  line-height: 40px;
+  border-radius: 100px;
+  text-align: center;
+  cursor:pointer;
+  width: auto;
+  padding: 0 45px;
+}
+.operation{
+  border-top: 1px solid #EBEBEB;;
+  padding: 30px 14px  14px;
+  margin-top: 5px;
+}
+.operation .case{
+  margin-bottom: 33px;
+}
+.operation .case span{
+  margin-left: 70px;
+  line-height: 22px;
+  font-size: 15px;
+  color: #ADADAD;
+  display: inline-block;
+  vertical-align: middle;
+}
+.operation .case span.active{
+  color: #A71E2F;
+}

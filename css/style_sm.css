@@ -1,3 +1,24 @@
 @media (min-width: 768px){
-   
+  .headerCase div{
+    line-height: 40px;
+  }
+  .headerCase div{
+    line-height: 44px;
+  }
+  .headerCase .logo {
+    position: absolute;
+    left: 55px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 130px;
+    height: 42px  ;
+  }
+  .tipCase > p{
+    padding: 30px 30px 30px 195px;
+    font-size: 16px;
+  }
+  .tipCase img{
+    width: 144px;
+    height: 120px;
+  }
 }
