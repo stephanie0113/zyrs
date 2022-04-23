@@ -135,6 +135,45 @@
                  歡迎透過以下渠道與我們聯絡。
                </p>
              </div>
+             <div class="content_text">
+               <p class="headline">聯絡我們</p>
+               <div>
+                 <ul class="content_nav">
+                   <li class="active">
+                     聯絡我們
+                   </li>
+                   <li>
+                     你的查詢
+                   </li>
+                 </ul>
+                 <div>
+                   <div class="contac_us">
+                     <ul>
+                       <li>
+                         <p>客戶服務熱線</p>
+                       </li>
+                       <li class="solid"/>
+                       <li>
+                         <p>電郵地址</p>
+                       </li>
+                       <li class="solid"/>
+                       <li>
+                         <p>地址</p>
+                       </li>
+                       <li class="solid"/>
+                       <li>
+                         <p>個人資料保障</p>
+                       </li>
+                       <li class="solid"/>
+                       <li>
+                         <p>服務承諾</p>
+                       </li>
+                     </ul>
+                   </div>
+                   <div></div>
+                 </div>
+               </div>
+             </div>
            </div>
          </div>
        </div>
@@ -168,6 +207,10 @@
    }).on('click','.clas_b',function (e){
      e.stopPropagation();
      $(this).addClass('active').siblings().removeClass('active').parents('.clas_a').siblings().removeClass('active').find('.clas_b').removeClass('active')
+   })
+
+   $('.content_nav').on('click','li',function (){
+     $(this).addClass('active').siblings().removeClass('active')
    })
  </script>
 </body>
