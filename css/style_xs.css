@@ -155,6 +155,7 @@
 .content_text >div .content_nav li{
   display: inline-block;
   vertical-align: middle;
+  cursor:pointer;
   position: relative;
   font-size: 16px;
   color: #333333;
@@ -188,4 +189,180 @@
   font-size: 20px;
   font-weight: 500;
   color: #6D1414;
+}
+/*联系我们*/
+.on_duty{
+  font-size: 0;
+  margin-top: 24px;
+  position: relative;
+}
+.on_duty>img{
+  margin-right: 17px;
+  position: absolute;
+}
+.on_duty>div{
+  width: 100%;
+}
+.on_duty div p{
+  font-size: 14px;
+  font-weight: 400;
+  width: 100%;
+  color: #333333;
+  line-height: 24px;
+}
+.on_duty div p span:first-child{
+  width: 50%;
+  display: inline-block;
+  padding-left: 40px;
+}
+.on_duty div p:first-child{
+  margin-bottom: 16px;
+}
+.call_case{
+  margin-top: 28px;
+}
+.call_case ol{
+  font-size: 0;
+  margin-top: 7px;
+}
+.call_case ol li{
+  width: 49%;
+  height: 80px;
+  background: #F9F0F2;
+  border-radius: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  padding-top: 15px;
+  box-sizing: border-box;
+}
+.call_case ol li:nth-child(1),.call_case ol li:nth-child(2){
+  margin-bottom: 10px;
+}
+.call_case ol li:nth-child(1),.call_case ol li:nth-child(4){
+  margin-right: 2%;
+}
+.call_case ol li span{
+  font-size: 16px;
+  font-weight: 500;
+  color: #333333;
+  margin-bottom: 14px;
+}
+.call_case ol li a{
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #A71E2F;
+  line-height: 32px;
+}
+.mail_case{
+  font-size: 0;
+}
+.mail_case img,.mail_case a{
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 20px;
+}
+.mail_case a{
+  font-size: 14px;
+  font-weight: 500;
+  color: #A71E2F;
+  padding-left: 16px;
+  line-height: 32px;
+}
+.map{
+  width: 100%;
+  border-radius: 8px;
+  background: gray;
+  height: 264px;
+}
+.security{
+  font-size: 14px;
+  color: #333333;
+  line-height: 24px;
+  margin-top: 15px;
+}
+.stp_case{
+  margin-top: 35px;
+}
+.stp_case li {
+  padding: 0 22px!important;
+  font-size: 0;
+}
+.stp_case li:not(:last-child){
+  margin-bottom: 56px;
+}
+.stp_case li:not(:last-child) .mark:after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -60px;
+  width: 2px;
+  height: 60px;
+  background: #A71E2F;
+}
+.stp_case li>div{
+  display: inline-block;
+  vertical-align: middle;
+}
+.stp_case li .mark{
+  position: relative;
+  z-index: 2;
+  width: 50px;
+  line-height: 50px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.16);
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 12px;
+}
+.stp_case li .mark img{
+  width: 30px;
+  display: inline-block;
+}
+.stp_case li .mark.active{
+  background: #A71E2F;
+}
+.stp_case li .mark_text h3{
+  display: block;
+  font-size: 16px;
+  color: #333333;
+  line-height: 26px;
+}
+.stp_case li .mark_text h3 i{
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+  line-height: 26px;
+}
+.stp_case li .mark_text p{
+  font-size: 16px;
+  color: #A71E2F;
+  line-height: 26px;
+}
+.footer{
+  padding-bottom: 22px;
+  padding-top: 22px;
+}
+.footer p{
+  font-size: 12px;
+  text-align: center;
+  color: #5C5C5C;
+  line-height: 14px;
+}
+.footer ul{
+  font-size: 0;
+  text-align: center;
+  margin-bottom: 22px;
+}
+.footer ul li {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  color: #A71E2F;
+  line-height: 14px;
+  padding: 0 8px;
+}
+.footer ul li:not(:last-child){
+  border-right: 1px solid #ADADAD;
 }

@@ -31,10 +31,16 @@
   .md_right li i.active{
     color: #a71e2f;
   }
+  .contac_us ul>li{
+    padding: 20px 40px;
+  }
   .content_case{
     font-size: 0;
     min-height: calc(100vh - 80px);
     position: relative;
+  }
+  .content_text >div .content_nav{
+    padding: 20px 40px;
   }
   .navigation{
     padding: 10px;
@@ -47,6 +53,7 @@
     display: inline-block!important;
     vertical-align: top;
   }
+
   .content_inner{
     display: inline-block;
     vertical-align: top;
@@ -57,6 +64,12 @@
     margin-left: 280px;
     min-height: calc(100vh - 80px);
     border-left: 1px solid #EBEBEB;
+  }
+  .content_text{
+    padding-bottom: 100px;
+  }
+  .content_text>div{
+    border-radius: 10px;
   }
   .content_text>div,.headline{
     max-width: 1280px;
@@ -70,5 +83,24 @@
   }
   .headline:after{
     left: 0px;
+  }
+  .call_case ol li{
+    margin:0!important;
+    width: 24%;
+  }
+  .call_case ol li:not(:last-child){
+    margin-right: 1.333%!important;
+  }
+  .footer{
+    margin-left: 280px;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-left: 1px solid #EBEBEB;
+  }
+  .stp_case li:not(:last-child) .mark:after{
+    width: 200px;
+  }
+  .stp_case li:not(:last-child){
+    margin-right: 105px;
   }
 }
