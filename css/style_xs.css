@@ -503,6 +503,7 @@ span.login_case_title {
   line-height: 40px;
   font-size: 0;
   background-color: #f9f0f2;
+  border: 2px solid #f9f0f2;
   border-radius: 10px;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -510,17 +511,17 @@ span.login_case_title {
 
 .login_form_input input {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
   width: 88%;
-  height: 40px;
-  line-height: 40px;
+  height: 36px;
+  line-height: 36px;
   font-size: 14px;
   color: #000;
   background-color: transparent;
 }
 
 .login_form_input.error {
-  border: 2px solid #db2a40;
+  border-color: #db2a40;
 }
 
 .login_form_input i {
@@ -602,4 +603,176 @@ span.login_case_title {
 
 .language_select span.active {
   margin-left: 0;
+}
+
+/* 注册 */
+.register_container {
+  padding-top: 20px;
+}
+
+.register_container .login_title {
+  padding-bottom: 24px;
+}
+
+.register_container .login_form {
+  padding: 0 20px;
+}
+
+.register_step {
+  margin-bottom: 26px;
+}
+
+.register_step ul {
+  margin-bottom: 12px;
+  text-align: center;
+  font-size: 0;
+}
+
+.register_step li {
+  position: relative;
+  margin-right: 70px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.register_step li::after {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50% -50%);
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 70px;
+  height: 1px;
+  background-color: #6d1414;
+}
+
+.register_step li:last-child {
+  margin-right: 0px;
+}
+
+.register_step li:last-child::after {
+  display: none;
+}
+
+.step_next {
+  width: 40px;
+  height: 40px;
+  background: url('../images/register/icon_circle.png') no-repeat center center;
+  background-size: 40px 40px;
+  text-align: center;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  line-height: 40px;
+  text-align: center;
+}
+
+.step_next p {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 auto;
+  width: 30px;
+  height: 30px;
+  background-color: #db2a40;
+  font-size: 16px;
+  line-height: 30px;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.step_success {
+  width: 20px;
+  height: 20px;
+  background: url('../images/register/icon_success.png') no-repeat center center;
+  background-size: 20px 20px;
+}
+
+.step_success p {
+  display: none;
+}
+
+.register_step_title {
+  text-align: center;
+  font-size: 16px;
+  line-height: 16px;
+  color: #a71e2f;
+}
+
+.register_vaild {
+  padding: 0 20px;
+  font-size: 14px;
+  color: #5c5c5c;
+}
+
+.vaild_email {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.vaild_code {
+  padding: 34px 0 17px;
+}
+
+.vaild_code ul {
+  margin-top: 23px;
+  font-size: 0;
+}
+
+.vaild_code li {
+  margin-bottom: 17px;
+}
+
+.vaild_code i,
+.vaild_code p {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+.vaild_code i {
+  margin-right: 9px;
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-radius: 50%;
+  background: url('../images/register/icon_check.png') no-repeat center center;
+  background-size: 18px 18px;
+}
+
+.vaild_code li.active i {
+  background-image: url('../images/register/icon_check_active.png');
+}
+
+.vaild_send {
+  margin-bottom: 40px;
+}
+
+.send_code {
+  margin: 17px auto 0;
+  width: 180px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.register_container .verification_code_wrap .login_form_input {
+  width: 100%;
+}
+
+.register_container .login_form_wrap {
+  margin-bottom: 34px;
+}
+
+.register_container .login_footer {
+  margin-bottom: 67px;
+}
+
+.send_code_disabled {
+  border-color: #e4bbc0;
+  color: #e4bbc0;
+  cursor: not-allowed;
 }

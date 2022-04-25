@@ -75,57 +75,83 @@
             </div>
           </div>
           <div class="content_inner">
-            <div>
-              <div class="tipCase login_case">
-                <img src="images/login/img_tip.png" alt="" class="img_tip"></i>
-                <p>
-                  <span class="login_case_title">你好！</span>
-                  <span class="login_case_subtitle">歡迎蒞臨中銀人壽電子客戶服務平台</span>
-                </p>
-              </div>
+            <div class="register_container">
               <div class="col-xs-12">
                 <div class="login_wrap">
-                  <h1 class="login_title">登入</h1>
+                  <h1 class="login_title">新用戶註冊</h1>
+                  <div class="register_step">
+                    <ul>
+                      <li class="step_next step_success">
+                        <p>1</p>
+                      </li>
+                      <li class="step_next">
+                        <p>2</p>
+                      </li>
+                    </ul>
+                    <p class="register_step_title">設置帳戶</p>
+                  </div>
+                  <div class="register_vaild">
+                    <div class="vaild_email">
+                      <p>用戶名稱(電郵地址)</p>
+                      <p class="color_a71e2f fs_16">abc@gmail.com</p>
+                    </div>
+                    <div class="vaild_code">
+                      <p>請選擇以電郵或手提電話收取驗證碼</p>
+                      <ul>
+                        <li>
+                          <i></i>
+                          <p>已登記的電郵地址</p>
+                        </li>
+                        <li class="active">
+                          <i></i>
+                          <p>已登記的手提電話號碼</p>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="vaild_send">
+                      <p>發送驗證碼至</p>
+                      <p class="color_a71e2f fs_16">(852) 90001234</p>
+                      <p>如有任何查詢，請致電中銀人壽客戶服務熱線 (852)2860 0688 或 電郵至cs@boclife.com.hk</p>
+                    </div>
+                  </div>
                   <form action="" class="login_form">
                     <div class="login_form_wrap">
-                      <label class="login_form_label clearfix">
-                        <span class="fl">用戶名稱(電郵地址)</span>
-                        <span class="color_a71e2f fr">忘記用戶名稱</span>
-                      </label>
-                      <div class="login_form_input">
-                        <input type="text" value="avatar@gmail.com">
-                        <i style="display: block;"></i>
-                      </div>
-                      <p class="error_text" style="display: none;">用戶名錯誤</p>
-                    </div>
-                    <div class="login_form_wrap">
-                      <label class="login_form_label clearfix">
-                        <span class="fl">用戶名稱(電郵地址)</span>
-                        <span class="color_a71e2f fr">忘記用戶名稱</span>
-                      </label>
-                      <div class="login_form_input error">
-                        <input type="password" value="avatar@gmail.com">
-                        <i style="display: block;"></i>
-                      </div>
-                      <p class="error_text">密碼錯誤</p>
-                    </div>
-                    <div class="login_form_wrap">
-                      <label class="login_form_label clearfix">
-                        <span class="fl">驗證碼</span>
-                        <span class="color_a71e2f fr">刷新圖片</span>
+                      <label class="login_form_label">
+                        <span>輸入驗證碼</span>
                       </label>
                       <div class="verification_code_wrap">
                         <div class="login_form_input">
                           <input type="text" value="">
                           <i style="display: none;"></i>
                         </div>
-                        <img src="./images/login/icon_verification_code.png" alt="">
+                        <div class="btn_bg_plain send_code">發送驗證碼</div>
                       </div>
                       <p class="error_text" style="display: none;">驗證碼錯誤</p>
                     </div>
-                    <div class="login_submit">
-                      <div class="btn_bg">登入</div>
-                      <div class="btn_bg_plain">新用戶註冊</div>
+                    <div class="login_form_wrap">
+                      <label class="login_form_label">
+                        <span>設置密碼</span>
+                      </label>
+                      <div class="login_form_input">
+                        <input type="password" value="avatar@gmail.com">
+                        <i style="display: none;"></i>
+                      </div>
+                      <p class="error_text" style="display: none;">密碼錯誤</p>
+                    </div>
+                    <div class="login_form_wrap">
+                      <label class="login_form_label">
+                        <span>確認密碼</span>
+                      </label>
+                      <div class="login_form_input error">
+                        <input type="password" value="avatar@gmail.com">
+                        <i style="display: block;"></i>
+                      </div>
+                      <p class="error_text" style="display: block;">密碼不符</p>
+                    </div>
+
+                    <div class="login_submit clearfix">
+                      <div class="btn_bg">確定</div>
+                      <div class="btn_bg_plain">上一步</div>
                     </div>
                   </form>
                 </div>
@@ -179,6 +205,32 @@
 
     $('.content_nav').on('click', 'li', function () {
       $(this).addClass('active').siblings().removeClass('active')
+    })
+
+    // 選擇以電郵或手提電話收取驗證碼
+    $('.vaild_code').on('click', 'li', function () {
+      $(this).addClass('active').siblings().removeClass('active')
+    })
+
+    var flag = true
+    // 发送验证码
+    $('.send_code').on('click', function () {
+      if (flag) {
+        flag = false
+        var that = $(this)
+        $(this).addClass('send_code_disabled')
+        var num = 60
+        var timer = setInterval(function () {
+          that.html('發送驗證碼(' + num + 's)')
+          if (num < 1) {
+            clearInterval(timer)
+            that.html('發送驗證碼')
+            that.removeClass('send_code_disabled')
+            flag = true
+          }
+          num--
+        }, 1000)
+      }
     })
   </script>
 </body>

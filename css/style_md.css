@@ -165,6 +165,7 @@
   }
 
   .login_footer {
+    margin-bottom: 145px;
     width: 460px;
   }
 
@@ -178,5 +179,18 @@
 
   .login_submit {
     padding-top: 13px;
+  }
+
+  /* 注册 */
+  .register_container {
+    margin-top: 81px;
+  }
+
+  .register_container .login_wrap {
+    width: 540px;
+  }
+
+  .register_container .login_footer {
+    margin-bottom: 106px;
   }
 }

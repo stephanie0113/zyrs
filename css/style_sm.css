@@ -199,10 +199,12 @@
   }
 
   .login_footer {
+    margin-bottom: 113px;
     width: 520px;
   }
 
   .login_footer li {
+    margin-bottom: 0;
     padding: 0 10px;
     display: inline-block;
     vertical-align: middle;
@@ -216,4 +218,52 @@
     margin: 0 auto;
     width: 300px;
   }
+
+  /* 注册 */
+  .register_container {
+    margin-top: 76px;
+  }
+
+  .register_container .login_title {
+    padding-bottom: 31px;
+  }
+
+  .vaild_email {
+    padding-bottom: 20px;
+  }
+
+  .vaild_code {
+    padding-bottom: 13px;
+  }
+
+  .send_code {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+  }
+
+  .register_container .verification_code_wrap .login_form_input {
+    width: auto;
+    margin-right: 200px;
+  }
+
+  .register_container .login_submit {
+    margin-top: 64px;
+  }
+
+  .register_container .login_submit div {
+    margin-bottom: 0;
+    width: 220px;
+  }
+
+  .register_container .btn_bg {
+    float: right;
+  }
+
+  .register_container .btn_bg_plain {
+    float: left;
+  }
+
+
 }
