@@ -4,9 +4,13 @@
   padding-bottom: 13px;
   position: relative;
   font-size: 0;
+  position: fixed;
+  z-index: 12;
+  background: #ffff;
 }
-.showDond{
+.showDond >div{
   box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  z-index: 11;
 }
 .headerCase .logo {
   position: absolute;
@@ -50,6 +54,20 @@
 .navigation{
   padding: 0 20px;
   display: none;
+  width: 100%;
+  background: #fff;
+  z-index: 9;
+  position: fixed;
+  top: 60px;
+}
+.gray{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  background: rgba(0,0,0,0.3);
 }
 .navigation ul .licase{
   padding: 15px 8px 15px 30px;
@@ -62,6 +80,10 @@
   right: 5px;
   top: 50%;
   transform: translateY(-50%) rotate(180deg);
+  transition: 0.3s
+}
+.navigation ul .rote .licase .right_icon{
+  transform: translateY(-50%) rotate(0deg);
 }
 .navigation ul .licase2{
   padding: 15px 8px 15px 56px;
@@ -84,9 +106,14 @@
   display: inline-block;
   vertical-align: middle;
   margin-left: 20px;
+  width: 80%;
+}
+.navigation ul .licase span i{
+  display: inline-block;
 }
 .content_case{
   padding: 0;
+  position: relative;
 }
 .right_case{
   display: none;
@@ -315,6 +342,10 @@
   border-radius: 50%;
   text-align: center;
   margin-right: 12px;
+}
+.content_inner>div{
+  padding-top: 60px;
+  background: #fdfdfd;
 }
 .stp_case li .mark img{
   width: 30px;

@@ -1,0 +1,15 @@
+@media (min-width: 1200px){
+  .call_case ol li{
+    margin:0!important;
+    width: 24%;
+  }
+  .call_case ol li:not(:last-child){
+    margin-right: 1.333%!important;
+  }
+  .stp_case li:not(:last-child) .mark:after{
+    width: 200px;
+  }
+  .stp_case li:not(:last-child){
+    margin-right: 105px;
+  }
+}

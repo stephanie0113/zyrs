@@ -12,10 +12,12 @@
 	<link rel="stylesheet" href="css/style_xs.css" />
 	<link rel="stylesheet" href="css/style_sm.css" />
 	<link rel="stylesheet" href="css/style_md.css" />
+	<link rel="stylesheet" href="css/style_lg.css" />
 </head>
 <body>
 	 <div class="wrap">
      <div class="container-fluid  ">
+<!--       <div class="gray"></div>-->
        <div class="row showDond">
          <div class="col-xs-12 clearfix headerCase active">
            <div class="left hidden-md hidden-lg">
@@ -47,6 +49,7 @@
        </div>
        <div class="row">
          <div class="col-xs-12 content_case">
+           <div class="gray" style="display: none"></div>
            <div class="navigation">
              <ul>
                <li class="clas_a has_ol">
@@ -86,7 +89,11 @@
                    <li class="clas_b">
                      <div class="licase licase2">
                        <img src="images/header/icon_e.png" alt="">
-                       <span>e站通</span>
+<!--                       <span>e站通</span>-->
+                       <span>
+                         <i>Enquiry of <br class="visible-md visible-lg"/>e-Statement/</i>
+                         <i>e-Correspondence</i>
+                       </span>
                      </div>
                    </li>
                  </ol>
@@ -293,7 +300,12 @@
    $(".togoNav").click(function (){
      $('.navigation').toggle(300)
      $(this).hide().siblings().show()
+     $('.gray').toggle()
      // $(this).parents('.row').toggleClass('showDond')
+   })
+   $(".gray").click(function (){
+     $(this).hide()
+     $('.navigation').toggle(300)
    })
    $('.operation').on('click','span',function (){
      $(this).addClass('active').siblings().removeClass('active')
@@ -305,8 +317,9 @@
      if($(this).hasClass('has_ol')) {
        $(this).find('.right_case').toggle(300)
        $(this).siblings().find('.right_case').hide(300)
+       $(this).toggleClass('rote')
      } else {
-       $(this).addClass('active').siblings().removeClass('active').find('.clas_b').removeClass('active').parents('.right_case').hide(300)
+       $(this).addClass('active').siblings().removeClass('active rote').find('.clas_b').removeClass('active').parents('.right_case').hide(300)
      }
    }).on('click','.clas_b',function (e){
      e.stopPropagation();
