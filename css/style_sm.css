@@ -30,7 +30,13 @@
   .headline:after{
     left: 20px;
   }
+  .navigation{
+    top: 70px;
+  }
 /*  联系我们*/
+  .content_inner>div{
+    padding-top: 70px;
+  }
   .on_duty div p span:first-child{
     width: 176px;
   }
