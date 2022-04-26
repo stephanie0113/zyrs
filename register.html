@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/style_xs.css" />
   <link rel="stylesheet" href="css/style_sm.css" />
   <link rel="stylesheet" href="css/style_md.css" />
+  <link rel="stylesheet" href="css/style_lg.css" />
 </head>
 
 <body>
@@ -43,6 +44,7 @@
       </div>
       <div class="row">
         <div class="col-xs-12 content_case">
+          <div class="gray" style="display: none"></div>
           <div class="navigation">
             <ul>
               <li class="clas_a">
@@ -75,7 +77,7 @@
             </div>
           </div>
           <div class="content_inner">
-            <div class="register_container">
+            <div class="register_container clearfix">
               <div class="col-xs-12">
                 <div class="login_wrap">
                   <h1 class="login_title">新用戶註冊</h1>
@@ -183,7 +185,12 @@
     $(".togoNav").click(function () {
       $('.navigation').toggle(300)
       $(this).hide().siblings().show()
+      $('.gray').toggle()
       // $(this).parents('.row').toggleClass('showDond')
+    })
+    $(".gray").click(function () {
+      $(this).hide()
+      $('.navigation').toggle(300)
     })
     $('.operation').on('click', 'span', function () {
       $(this).addClass('active').siblings().removeClass('active')
@@ -195,8 +202,9 @@
       if ($(this).hasClass('has_ol')) {
         $(this).find('.right_case').toggle(300)
         $(this).siblings().find('.right_case').hide(300)
+        $(this).toggleClass('rote')
       } else {
-        $(this).addClass('active').siblings().removeClass('active').find('.clas_b').removeClass('active').parents('.right_case').hide(300)
+        $(this).addClass('active').siblings().removeClass('active rote').find('.clas_b').removeClass('active').parents('.right_case').hide(300)
       }
     }).on('click', '.clas_b', function (e) {
       e.stopPropagation();

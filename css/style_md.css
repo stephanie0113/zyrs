@@ -189,8 +189,9 @@
   }
 
   /* 注册 */
-  .register_container {
-    margin-top: 81px;
+  div.register_container {
+    padding-top: 81px;
+    margin-top: 0;
   }
 
   .register_container .login_wrap {

@@ -8,8 +8,9 @@
   z-index: 12;
   background: #ffff;
 }
-.showDond >div{
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+
+.showDond>div {
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
   z-index: 11;
 }
 
@@ -67,14 +68,15 @@
   position: fixed;
   top: 60px;
 }
-.gray{
+
+.gray {
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   z-index: 5;
-  background: rgba(0,0,0,0.3);
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .navigation ul .licase {
@@ -91,7 +93,8 @@
   transform: translateY(-50%) rotate(180deg);
   transition: 0.3s
 }
-.navigation ul .rote .licase .right_icon{
+
+.navigation ul .rote .licase .right_icon {
   transform: translateY(-50%) rotate(0deg);
 }
 
@@ -122,7 +125,8 @@
   margin-left: 20px;
   width: 80%;
 }
-.navigation ul .licase span i{
+
+.navigation ul .licase span i {
   display: inline-block;
 }
 
@@ -403,11 +407,13 @@
   text-align: center;
   margin-right: 12px;
 }
-.content_inner>div{
+
+.content_inner>div {
   padding-top: 60px;
   background: #fdfdfd;
 }
-.stp_case li .mark img{
+
+.stp_case li .mark img {
   width: 30px;
   display: inline-block;
 }
@@ -607,6 +613,7 @@ span.login_case_title {
   line-height: 40px;
   font-size: 16px;
   text-align: center;
+  cursor: pointer;
 }
 
 .login_submit .btn_bg {
@@ -621,6 +628,7 @@ span.login_case_title {
 }
 
 .login_footer li {
+  cursor: pointer;
   margin-bottom: 20px;
   font-size: 14px;
   line-height: 14px;
@@ -636,7 +644,8 @@ span.login_case_title {
 
 /* 注册 */
 .register_container {
-  padding-top: 20px;
+  margin-top: 20px;
+  background-color: #fdfdfd;
 }
 
 .register_container .login_title {
@@ -750,6 +759,7 @@ span.login_case_title {
 
 .vaild_code li {
   margin-bottom: 17px;
+  cursor: pointer;
 }
 
 .vaild_code i,
