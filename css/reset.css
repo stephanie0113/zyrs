@@ -118,6 +118,12 @@ color: #333;}
 
 		-ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#a71e2f, endColorstr=#db2a40)";/*IE8+*/
 }
+
+.btn_bg_plain {
+  border: 1px solid #a71e2f;
+	border-radius: 50px;
+	color: #a71e2f;
+}
  
 
 

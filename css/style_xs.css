@@ -1,5 +1,5 @@
 /*头部*/
-.headerCase{
+.headerCase {
   padding-top: 13px;
   padding-bottom: 13px;
   position: relative;
@@ -12,46 +12,53 @@
   box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
   z-index: 11;
 }
+
 .headerCase .logo {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   width: 107px;
   height: 34px;
 }
-.headerCase>div{
+
+.headerCase>div {
   width: 50%;
   display: inline-block;
   vertical-align: middle;
   line-height: 34px;
 }
 
-.headerCase .right{
+.headerCase .right {
   text-align: right;
 }
-.headerCase img{
+
+.headerCase img {
   display: inline-block;
 }
-.tipCase{
+
+.tipCase {
   position: relative;
   padding: 0;
   margin-bottom: 60px;
 }
-.tipCase > p{
+
+.tipCase>p {
   background: linear-gradient(to right, #db2a40, #a71e2f);
   padding: 16px 30px 16px 150px;
   color: #fff;
   font-size: 14px;
 }
-.tipCase img{
+
+.tipCase img {
   position: absolute;
   left: 15px;
   top: 20px;
   width: 122px;
   height: 95px;
 }
-.navigation{
+
+.navigation {
   padding: 0 20px;
   display: none;
   width: 100%;
@@ -69,13 +76,15 @@
   z-index: 5;
   background: rgba(0,0,0,0.3);
 }
-.navigation ul .licase{
+
+.navigation ul .licase {
   padding: 15px 8px 15px 30px;
-  cursor:pointer;
+  cursor: pointer;
   color: #5c5c5c;
   position: relative;
 }
-.navigation ul .licase .right_icon{
+
+.navigation ul .licase .right_icon {
   position: absolute;
   right: 5px;
   top: 50%;
@@ -85,22 +94,27 @@
 .navigation ul .rote .licase .right_icon{
   transform: translateY(-50%) rotate(0deg);
 }
-.navigation ul .licase2{
+
+.navigation ul .licase2 {
   padding: 15px 8px 15px 56px;
 }
-.navigation ul .active{
+
+.navigation ul .active {
   background: #f9f0f2;
   border-radius: 10px;
   color: #6d1414;
 }
-.navigation ul .active span{
+
+.navigation ul .active span {
   color: #6d1414;
 }
-.navigation ul .licase image{
+
+.navigation ul .licase image {
   display: inline-block;
   vertical-align: middle;
 }
-.navigation ul .licase span{
+
+.navigation ul .licase span {
   font-size: 16px;
   line-height: 30px;
   display: inline-block;
@@ -111,14 +125,17 @@
 .navigation ul .licase span i{
   display: inline-block;
 }
-.content_case{
+
+.content_case {
   padding: 0;
   position: relative;
 }
-.right_case{
+
+.right_case {
   display: none;
 }
-.temp_btn{
+
+.temp_btn {
   border: 1px solid #a71e2f;
   color: #a71e2f;
   font-size: 16px;
@@ -126,24 +143,29 @@
   line-height: 40px;
   border-radius: 100px;
   text-align: center;
-  cursor:pointer;
+  cursor: pointer;
   width: auto;
   padding: 0 45px;
 }
-.operation{
-  border-top: 1px solid #EBEBEB;;
-  padding: 30px 14px  14px;
+
+.operation {
+  border-top: 1px solid #EBEBEB;
+  ;
+  padding: 30px 14px 14px;
   margin-top: 5px;
   margin-left: 13px;
   margin-right: 13px;
 }
-.operation img{
+
+.operation img {
   margin: 4px;
 }
-.operation .case{
+
+.operation .case {
   margin-bottom: 33px;
 }
-.operation .case span{
+
+.operation .case span {
   margin-left: 70px;
   line-height: 22px;
   font-size: 15px;
@@ -151,10 +173,12 @@
   display: inline-block;
   vertical-align: middle;
 }
-.operation .case span.active{
+
+.operation .case span.active {
   color: #A71E2F;
 }
-.headline{
+
+.headline {
   font-size: 30px;
   color: #333333;
   padding: 0px 17px;
@@ -163,7 +187,8 @@
   margin-top: 30px;
   margin-top: 10px;
 }
-.headline:after{
+
+.headline:after {
   content: '';
   position: absolute;
   width: 51px;
@@ -172,26 +197,31 @@
   left: 17px;
   bottom: -28px;
 }
-.content_text >div{
-  box-shadow: 0px 0px 12px rgba(0,0,0,0.1);
+
+.content_text>div {
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
 }
-.content_text >div .content_nav{
+
+.content_text>div .content_nav {
   border-bottom: 2px solid #EBEBEB;
   padding: 20px;
 }
-.content_text >div .content_nav li{
+
+.content_text>div .content_nav li {
   display: inline-block;
   vertical-align: middle;
-  cursor:pointer;
+  cursor: pointer;
   position: relative;
   font-size: 16px;
   color: #333333;
   margin-right: 30px;
 }
-.content_text >div .content_nav li.active{
+
+.content_text>div .content_nav li.active {
   color: #A71E2F;
 }
-.content_text >div .content_nav li.active:after{
+
+.content_text>div .content_nav li.active:after {
   width: 74px;
   height: 3px;
   background: #A71E2F;
@@ -202,57 +232,69 @@
   bottom: -22px;
   transform: translateX(-50%);
 }
-.contac_us ul>li{
+
+.contac_us ul>li {
   padding: 26px 16px 20px;
 }
-.contac_us ul>li.solid{
+
+.contac_us ul>li.solid {
   width: 100%;
   height: 6px;
   display: block;
   padding: 0;
   background: #EBEBEB;
 }
-.contac_us ul>li>p{
+
+.contac_us ul>li>p {
   font-size: 20px;
   font-weight: 500;
   color: #6D1414;
 }
+
 /*联系我们*/
-.on_duty{
+.on_duty {
   font-size: 0;
   margin-top: 24px;
   position: relative;
 }
-.on_duty>img{
+
+.on_duty>img {
   margin-right: 17px;
   position: absolute;
 }
-.on_duty>div{
+
+.on_duty>div {
   width: 100%;
 }
-.on_duty div p{
+
+.on_duty div p {
   font-size: 14px;
   font-weight: 400;
   width: 100%;
   color: #333333;
   line-height: 24px;
 }
-.on_duty div p span:first-child{
+
+.on_duty div p span:first-child {
   width: 50%;
   display: inline-block;
   padding-left: 40px;
 }
-.on_duty div p:first-child{
+
+.on_duty div p:first-child {
   margin-bottom: 16px;
 }
-.call_case{
+
+.call_case {
   margin-top: 28px;
 }
-.call_case ol{
+
+.call_case ol {
   font-size: 0;
   margin-top: 7px;
 }
-.call_case ol li{
+
+.call_case ol li {
   width: 49%;
   height: 80px;
   background: #F9F0F2;
@@ -263,63 +305,79 @@
   padding-top: 15px;
   box-sizing: border-box;
 }
-.call_case ol li:nth-child(1),.call_case ol li:nth-child(2){
+
+.call_case ol li:nth-child(1),
+.call_case ol li:nth-child(2) {
   margin-bottom: 10px;
 }
-.call_case ol li:nth-child(1),.call_case ol li:nth-child(4){
+
+.call_case ol li:nth-child(1),
+.call_case ol li:nth-child(4) {
   margin-right: 2%;
 }
-.call_case ol li span{
+
+.call_case ol li span {
   font-size: 16px;
   font-weight: 500;
   color: #333333;
   margin-bottom: 14px;
 }
-.call_case ol li a{
+
+.call_case ol li a {
   display: block;
   font-size: 14px;
   font-weight: 500;
   color: #A71E2F;
   line-height: 32px;
 }
-.mail_case{
+
+.mail_case {
   font-size: 0;
 }
-.mail_case img,.mail_case a{
+
+.mail_case img,
+.mail_case a {
   display: inline-block;
   vertical-align: middle;
   margin-top: 20px;
 }
-.mail_case a{
+
+.mail_case a {
   font-size: 14px;
   font-weight: 500;
   color: #A71E2F;
   padding-left: 16px;
   line-height: 32px;
 }
-.map{
+
+.map {
   width: 100%;
   border-radius: 8px;
   background: gray;
   height: 264px;
 }
-.security{
+
+.security {
   font-size: 14px;
   color: #333333;
   line-height: 24px;
   margin-top: 15px;
 }
-.stp_case{
+
+.stp_case {
   margin-top: 35px;
 }
+
 .stp_case li {
-  padding: 0 22px!important;
+  padding: 0 22px !important;
   font-size: 0;
 }
-.stp_case li:not(:last-child){
+
+.stp_case li:not(:last-child) {
   margin-bottom: 56px;
 }
-.stp_case li:not(:last-child) .mark:after{
+
+.stp_case li:not(:last-child) .mark:after {
   content: "";
   position: absolute;
   left: 50%;
@@ -328,11 +386,13 @@
   height: 60px;
   background: #A71E2F;
 }
-.stp_case li>div{
+
+.stp_case li>div {
   display: inline-block;
   vertical-align: middle;
 }
-.stp_case li .mark{
+
+.stp_case li .mark {
   position: relative;
   z-index: 2;
   width: 50px;
@@ -351,41 +411,49 @@
   width: 30px;
   display: inline-block;
 }
-.stp_case li .mark.active{
+
+.stp_case li .mark.active {
   background: #A71E2F;
 }
-.stp_case li .mark_text h3{
+
+.stp_case li .mark_text h3 {
   display: block;
   font-size: 16px;
   color: #333333;
   line-height: 26px;
 }
-.stp_case li .mark_text h3 i{
+
+.stp_case li .mark_text h3 i {
   font-size: 24px;
   font-weight: bold;
   color: #333333;
   line-height: 26px;
 }
-.stp_case li .mark_text p{
+
+.stp_case li .mark_text p {
   font-size: 16px;
   color: #A71E2F;
   line-height: 26px;
 }
-.footer{
+
+.footer {
   padding-bottom: 22px;
   padding-top: 22px;
 }
-.footer p{
+
+.footer p {
   font-size: 12px;
   text-align: center;
   color: #5C5C5C;
   line-height: 14px;
 }
-.footer ul{
+
+.footer ul {
   font-size: 0;
   text-align: center;
   margin-bottom: 22px;
 }
+
 .footer ul li {
   display: inline-block;
   vertical-align: middle;
@@ -394,6 +462,346 @@
   line-height: 14px;
   padding: 0 8px;
 }
-.footer ul li:not(:last-child){
+
+.footer ul li:not(:last-child) {
   border-right: 1px solid #ADADAD;
+}
+
+/* 登录 */
+img.img_tip {
+  width: 112px;
+  height: 90px;
+  left: 0;
+  top: 18px;
+}
+
+.temp_btn.btn_bg {
+  color: #fff;
+}
+
+.login_case {
+  margin-bottom: 47px;
+}
+
+.login_case p {
+  padding-left: 112px;
+}
+
+span.login_case_title {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.login_wrap {
+  background-color: #fff;
+  box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 20px;
+}
+
+.login_form {
+  padding: 0 22px;
+}
+
+.login_title {
+  padding: 42px 0 39px;
+  font-size: 30px;
+  line-height: 30px;
+  color: #333;
+  text-align: center;
+}
+
+.login_form_wrap {
+  position: relative;
+  margin-bottom: 33px;
+}
+
+.login_form_label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #5c5c5c;
+}
+
+.login_form_input {
+  position: relative;
+  padding: 0 12px 0 22px;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 0;
+  background-color: #f9f0f2;
+  border: 2px solid #f9f0f2;
+  border-radius: 10px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.login_form_input input {
+  display: inline-block;
+  vertical-align: top;
+  width: 88%;
+  height: 36px;
+  line-height: 36px;
+  font-size: 14px;
+  color: #000;
+  background-color: transparent;
+}
+
+.login_form_input.error {
+  border-color: #db2a40;
+}
+
+.login_form_input i {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  display: inline-block;
+  vertical-align: middle;
+  width: 15px;
+  height: 15px;
+  background: url('../images/login/icon_vaild.png') no-repeat center center;
+  background-size: 15px 15px;
+}
+
+.login_form_input.error i {
+  background-image: url('../images/login/icon_invaild.png');
+}
+
+.error_text {
+  position: absolute;
+  margin-top: 5px;
+  font-size: 14px;
+  color: #db2a40;
+}
+
+.verification_code_wrap {
+  font-size: 0;
+}
+
+.verification_code_wrap .login_form_input {
+  margin-right: 160px;
+  width: auto;
+}
+
+.verification_code_wrap img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 140px;
+  height: 40px;
+  border: 1px solid #adadad;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.login_submit {
+  padding: 13px 0 40px;
+}
+
+.login_submit div {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.login_submit .btn_bg {
+  margin-bottom: 25px;
+}
+
+.login_footer {
+  margin: 44px auto 68px;
+  font-size: 0;
+  color: #a71e2f;
+  text-align: center;
+}
+
+.login_footer li {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.language_select {
+  text-align: center;
+}
+
+.language_select span.active {
+  margin-left: 0;
+}
+
+/* 注册 */
+.register_container {
+  padding-top: 20px;
+}
+
+.register_container .login_title {
+  padding-bottom: 24px;
+}
+
+.register_container .login_form {
+  padding: 0 20px;
+}
+
+.register_step {
+  margin-bottom: 26px;
+}
+
+.register_step ul {
+  margin-bottom: 12px;
+  text-align: center;
+  font-size: 0;
+}
+
+.register_step li {
+  position: relative;
+  margin-right: 70px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.register_step li::after {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50% -50%);
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 70px;
+  height: 1px;
+  background-color: #6d1414;
+}
+
+.register_step li:last-child {
+  margin-right: 0px;
+}
+
+.register_step li:last-child::after {
+  display: none;
+}
+
+.step_next {
+  width: 40px;
+  height: 40px;
+  background: url('../images/register/icon_circle.png') no-repeat center center;
+  background-size: 40px 40px;
+  text-align: center;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  line-height: 40px;
+  text-align: center;
+}
+
+.step_next p {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 auto;
+  width: 30px;
+  height: 30px;
+  background-color: #db2a40;
+  font-size: 16px;
+  line-height: 30px;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.step_success {
+  width: 20px;
+  height: 20px;
+  background: url('../images/register/icon_success.png') no-repeat center center;
+  background-size: 20px 20px;
+}
+
+.step_success p {
+  display: none;
+}
+
+.register_step_title {
+  text-align: center;
+  font-size: 16px;
+  line-height: 16px;
+  color: #a71e2f;
+}
+
+.register_vaild {
+  padding: 0 20px;
+  font-size: 14px;
+  color: #5c5c5c;
+}
+
+.vaild_email {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.vaild_code {
+  padding: 34px 0 17px;
+}
+
+.vaild_code ul {
+  margin-top: 23px;
+  font-size: 0;
+}
+
+.vaild_code li {
+  margin-bottom: 17px;
+}
+
+.vaild_code i,
+.vaild_code p {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+.vaild_code i {
+  margin-right: 9px;
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-radius: 50%;
+  background: url('../images/register/icon_check.png') no-repeat center center;
+  background-size: 18px 18px;
+}
+
+.vaild_code li.active i {
+  background-image: url('../images/register/icon_check_active.png');
+}
+
+.vaild_send {
+  margin-bottom: 40px;
+}
+
+.send_code {
+  margin: 17px auto 0;
+  width: 180px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.register_container .verification_code_wrap .login_form_input {
+  width: 100%;
+}
+
+.register_container .login_form_wrap {
+  margin-bottom: 34px;
+}
+
+.register_container .login_footer {
+  margin-bottom: 67px;
+}
+
+.send_code_disabled {
+  border-color: #e4bbc0;
+  color: #e4bbc0;
+  cursor: not-allowed;
 }
