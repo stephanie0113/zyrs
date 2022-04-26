@@ -206,6 +206,7 @@
 .content_text>div .content_nav {
   border-bottom: 2px solid #EBEBEB;
   padding: 20px;
+  font-size: 0;
 }
 
 .content_text>div .content_nav li {
@@ -213,17 +214,18 @@
   vertical-align: middle;
   cursor: pointer;
   position: relative;
-  font-size: 16px;
+  font-size: 14px;
   color: #333333;
-  margin-right: 30px;
 }
-
+.content_text>div .content_nav li:not(:last-child){
+  margin-right: 26px;
+}
 .content_text>div .content_nav li.active {
   color: #A71E2F;
 }
 
 .content_text>div .content_nav li.active:after {
-  width: 74px;
+  width: 100%;
   height: 3px;
   background: #A71E2F;
   border-radius: 2px;
@@ -809,4 +811,80 @@ span.login_case_title {
   border-color: #e4bbc0;
   color: #e4bbc0;
   cursor: not-allowed;
+}
+
+/*医疗支援*/
+.not_tip{
+  margin-top: 40px;
+}
+.madical_case {
+  padding: 30px 15px;
+}
+
+.madical_case .call_case {
+  margin-top: 0;
+}
+
+.madical_case .call_case ol {
+  margin: 0;
+}
+.madical_case .call_case ol li img,.madical_case .call_case ol li span{
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 0px;
+  margin: 0 5px;
+}
+.madical_case .call_case ol li {
+  margin: 0!important;
+  height: 100px;
+  padding-top: 22px;
+  width: 100%;
+  font-size: 0;
+}
+.madical_case .call_case ol li span,.madical_case .call_case ol li a{
+  font-size: 20px;
+}
+.introduce_case {
+  font-size: 0;
+}
+.introduce_case li{
+  background: #F5F5F5;
+  border-radius: 10px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+.introduce_case li p{
+  background: #A71E2F;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #FFFFFF;
+  padding: 20px 16px;
+}
+.introduce_case li>div{
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #5C5C5C;
+  line-height: 26px;
+}
+.introduce_case li ol li{
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: #5C5C5C;
+  line-height: 26px;
+  padding-left: 14px;
+  position: relative;
+}
+.introduce_case li ol li:after{
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  transform: translateY(-50% );
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #16979D;
 }

@@ -17,7 +17,6 @@
 <body>
 	 <div class="wrap">
      <div class="container-fluid  ">
-<!--       <div class="gray"></div>-->
        <div class="row showDond">
          <div class="col-xs-12 clearfix headerCase active">
            <div class="left hidden-md hidden-lg">
@@ -275,16 +274,16 @@
                    </div>
                  </div>
                </div>
+               <div class="footer">
+                 <ul>
+                   <li>重要聲明及使用條款</li>
+                   <li>私隱政策</li>
+                   <li>保安資訊</li>
+                   <li>網站連結</li>
+                 </ul>
+                 <p>中銀集團人壽保險有限公司版權所有©2022</p>
+               </div>
              </div>
-           </div>
-           <div class="footer">
-             <ul>
-               <li>重要聲明及使用條款</li>
-               <li>私隱政策</li>
-               <li>保安資訊</li>
-               <li>網站連結</li>
-             </ul>
-             <p>中銀集團人壽保險有限公司版權所有©2022</p>
            </div>
          </div>
        </div>
@@ -297,35 +296,6 @@
 <script src="js/jq.js"></script>
 <script src="js/main.js"></script>
  <script>
-   $(".togoNav").click(function (){
-     $('.navigation').toggle(300)
-     $(this).hide().siblings().show()
-     $('.gray').toggle()
-     // $(this).parents('.row').toggleClass('showDond')
-   })
-   $(".gray").click(function (){
-     $(this).hide()
-     $('.navigation').toggle(300)
-   })
-   $('.operation').on('click','span',function (){
-     $(this).addClass('active').siblings().removeClass('active')
-   })
-  $('.md_right').on('click','.language',function (){
-    $(this).find('i').addClass('active').parent().siblings().find('i').removeClass('active')
-  })
-   $(".navigation").on('click','.clas_a',function (){
-     if($(this).hasClass('has_ol')) {
-       $(this).find('.right_case').toggle(300)
-       $(this).siblings().find('.right_case').hide(300)
-       $(this).toggleClass('rote')
-     } else {
-       $(this).addClass('active').siblings().removeClass('active rote').find('.clas_b').removeClass('active').parents('.right_case').hide(300)
-     }
-   }).on('click','.clas_b',function (e){
-     e.stopPropagation();
-     $(this).addClass('active').siblings().removeClass('active').parents('.clas_a').siblings().removeClass('active').find('.clas_b').removeClass('active')
-   })
-
    $('.content_nav').on('click','li',function (){
      $(this).addClass('active').siblings().removeClass('active')
    })

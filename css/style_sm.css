@@ -40,6 +40,10 @@
     top: 70px;
   }
 /*  联系我们*/
+  .content_text>div .content_nav li{
+    font-size: 16px;
+  }
+
   .content_inner>div{
     padding-top: 70px;
   }
@@ -130,7 +134,7 @@
   .footer ul,
   .footer p {
     display: inline-block;
-    width: 50%;
+    width: 60%;
     text-align: left;
     padding-left: 6px;
     vertical-align: middle;
@@ -139,6 +143,7 @@
 
   .footer p {
     text-align: right;
+    width: 40%;
     padding-right: 15px;
   }
 
@@ -269,6 +274,17 @@
   .register_container .btn_bg_plain {
     float: left;
   }
-
-
+/*  医疗支援*/
+  .not_tip{
+    margin-top: 50px;
+    padding-top: 0;
+  }
+  .special_2{
+    font-size: 0;
+  }
+  .special_2 ol{
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+  }
 }

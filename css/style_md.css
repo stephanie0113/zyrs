@@ -123,10 +123,10 @@
   }
 
   .footer {
-    margin-left: 280px;
+    /*margin-left: 280px;*/
     padding-left: 60px;
     padding-right: 60px;
-    border-left: 1px solid #EBEBEB;
+    /*border-left: 1px solid #EBEBEB;*/
   }
   .stp_case li:not(:last-child) .mark:after{
     width: 130px;
@@ -204,5 +204,20 @@
 
   .register_container .login_footer {
     margin-bottom: 106px;
+  }
+/*  医疗支援*/
+  .not_tip{
+    margin-top: 50px;
+  }
+  .madical_case{
+    padding: 30px 40px;
+  }
+  .special_3{
+    font-size: 0;
+  }
+  .special_3 ol{
+    display: inline-block;
+    vertical-align: top;
+    width: 32%;
   }
 }
