@@ -1,10 +1,11 @@
-@media (min-width: 992px){
-  .headerCase{
+@media (min-width: 992px) {
+  .headerCase {
     padding-top: 14px;
     padding-bottom: 14px;
     position: relative;
   }
-  .headerCase .logo{
+
+  .headerCase .logo {
     position: relative;
     left: 0;
     top: inherit;
@@ -22,35 +23,42 @@
     font-size: 0;
     text-align: right;
   }
-  .md_right li{
+
+  .md_right li {
     display: inline-block;
     vertical-align: middle;
     margin-right: 25px;
-    cursor:pointer;
+    cursor: pointer;
     line-height: 52px;
   }
-  .md_right li i{
+
+  .md_right li i {
     font-size: 15px;
     color: #adadad;
     display: block;
     line-height: 52px;
   }
-  .md_right li i.active{
+
+  .md_right li i.active {
     color: #a71e2f;
   }
-  .contac_us ul>li{
+
+  .contac_us ul>li {
     padding: 20px 40px;
   }
-  .content_case{
+
+  .content_case {
     font-size: 0;
     height: calc(100vh - 80px);
     position: relative;
     overflow: hidden;
   }
-  .content_text >div .content_nav{
+
+  .content_text>div .content_nav {
     padding: 20px 40px;
   }
-  .navigation{
+
+  .navigation {
     padding: 10px;
     height: 100%;
     min-height: calc(100vh - 80px);
@@ -59,11 +67,11 @@
     top: 0;
     width: 280px;
     box-sizing: border-box;
-    display: inline-block!important;
+    display: inline-block !important;
     vertical-align: top;
   }
 
-  .content_inner{
+  .content_inner {
     display: inline-block;
     vertical-align: top;
     width: calc(100vw - 280px);
@@ -76,13 +84,17 @@
     overflow: scroll;
     border-left: 1px solid #EBEBEB;
   }
-  .content_text{
+
+  .content_text {
     padding-bottom: 100px;
   }
-  .content_text>div{
+
+  .content_text>div {
     border-radius: 10px;
   }
-  .content_text>div,.headline{
+
+  .content_text>div,
+  .headline {
     max-width: 1280px;
     width: 85%;
     margin: 0 auto;
@@ -98,14 +110,19 @@
     margin-bottom: 80px;
     padding-left: 0;
   }
-  .headline:after{
+
+  .headline:after {
     left: 0px;
   }
 
   .gray{
     display: none!important;
   }
-  .footer{
+  .gray{
+    display: none!important;
+  }
+
+  .footer {
     margin-left: 280px;
     padding-left: 60px;
     padding-right: 60px;
@@ -116,5 +133,76 @@
   }
   .stp_case li:not(:last-child){
     margin-right: 33px;
+    margin-right: 33px;
+  }
+
+  /* 登录 */
+  img.img_tip {
+    width: 166px;
+    height: 137px;
+    top: 26px;
+  }
+
+  .login_case {
+    margin-bottom: 106px;
+  }
+
+  .login_case p {
+    padding-left: 180px;
+  }
+
+  span.login_case_title {
+    margin-right: 30px;
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  span.login_case_subtitle {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .login_form {
+    padding: 0 20px;
+  }
+
+  .login_form_wrap {
+    margin-bottom: 33px;
+  }
+
+  .login_wrap {
+    margin: 0 auto;
+    width: 460px;
+  }
+
+  .login_footer {
+    margin-bottom: 145px;
+    width: 460px;
+  }
+
+  .error_text {
+    margin-top: 6px;
+  }
+
+  .verification_code_wrap .login_form_input {
+    margin-right: 154px;
+  }
+
+  .login_submit {
+    padding-top: 13px;
+  }
+
+  /* 注册 */
+  div.register_container {
+    padding-top: 81px;
+    margin-top: 0;
+  }
+
+  .register_container .login_wrap {
+    width: 540px;
+  }
+
+  .register_container .login_footer {
+    margin-bottom: 106px;
   }
 }

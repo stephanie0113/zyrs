@@ -1,33 +1,39 @@
-@media (min-width: 768px){
-  .headerCase div{
+@media (min-width: 768px) {
+  .headerCase div {
     line-height: 40px;
   }
-  .headerCase div{
+
+  .headerCase div {
     line-height: 44px;
   }
+
   .headerCase .logo {
     position: absolute;
     left: 55px;
     top: 50%;
     transform: translateY(-50%);
     width: 130px;
-    height: 42px  ;
+    height: 42px;
   }
-  .tipCase > p{
+
+  .tipCase>p {
     padding: 30px 30px 30px 195px;
     font-size: 16px;
   }
-  .tipCase img{
+
+  .tipCase img {
     width: 144px;
     height: 120px;
   }
-  .headline{
+
+  .headline {
     font-size: 40px;
     padding: 24px 20px 0;
     line-height: 40px;
     margin-bottom: 52px;
   }
-  .headline:after{
+
+  .headline:after {
     left: 20px;
   }
   .navigation{
@@ -40,35 +46,44 @@
   .on_duty div p span:first-child{
     width: 176px;
   }
-  .call_case ol li{
+
+  .call_case ol li {
     width: 280px;
     height: 80px;
   }
-  .call_case ol li:nth-child(1), .call_case ol li:nth-child(4){
+
+  .call_case ol li:nth-child(1),
+  .call_case ol li:nth-child(4) {
     margin-right: 20px;
   }
-  .call_case ol li:nth-child(1), .call_case ol li:nth-child(2){
+
+  .call_case ol li:nth-child(1),
+  .call_case ol li:nth-child(2) {
     margin-bottom: 16px;
   }
-  .map{
+
+  .map {
     width: 520px;
     height: 400px;
     border-radius: 15px;
   }
-  .stp_case li:not(:last-child){
+
+  .stp_case li:not(:last-child) {
     margin-right: 35px;
   }
-  .stp_case li{
+
+  .stp_case li {
     box-sizing: border-box;
     display: inline-block;
     vertical-align: top;
-    margin-bottom: 0!important;
-    padding-top: 104px!important;
+    margin-bottom: 0 !important;
+    padding-top: 104px !important;
     position: relative;
-    width: auto!important;
+    width: auto !important;
     text-align: center;
   }
-  .stp_case li .mark{
+
+  .stp_case li .mark {
     display: block;
     top: 0;
     position: absolute;
@@ -80,32 +95,40 @@
     left: 50%;
     transform: translateX(-50%);
   }
-  .stp_case li .mark img{
+
+  .stp_case li .mark img {
     width: 45px;
     height: 45px;
   }
-  .stp_case li:first-child{
-    padding-left: 0!important;
-    padding-right: 0!important;
+
+  .stp_case li:first-child {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
-  .stp_case li:first-child .mark_text p{
+
+  .stp_case li:first-child .mark_text p {
     padding-top: 15px;
   }
-  .stp_case li .mark_text{
+
+  .stp_case li .mark_text {
     min-height: 44px;
   }
-  .stp_case li:not(:last-child) .mark:after{
+
+  .stp_case li:not(:last-child) .mark:after {
     width: 150px;
     height: 3px;
     top: 50%;
     left: 100%;
   }
+
   .footer {
     font-size: 0;
     padding-bottom: 33px;
     padding-top: 33px;
   }
-  .footer ul,.footer p{
+
+  .footer ul,
+  .footer p {
     display: inline-block;
     width: 50%;
     text-align: left;
@@ -113,8 +136,139 @@
     vertical-align: middle;
     margin-bottom: 0;
   }
-  .footer p{
+
+  .footer p {
     text-align: right;
     padding-right: 15px;
   }
+
+  /* 登录 */
+  img.img_tip {
+    width: 126px;
+    height: 102px;
+    top: 20px;
+  }
+
+  .login_case {
+    margin-bottom: 138px;
+  }
+
+  .login_case p {
+    padding-left: 150px;
+    font-size: 0;
+  }
+
+  .login_case p span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  span.login_case_title {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-right: 25px;
+  }
+
+  span.login_case_subtitle {
+    line-height: 20px;
+    font-size: 14px;
+  }
+
+  .login_form {
+    padding: 0 30px;
+  }
+
+  .login_form_wrap {
+    margin-bottom: 54px;
+  }
+
+  .login_container {
+    width: 520px;
+  }
+
+  .login_wrap {
+    margin: 0 auto;
+    width: 520px;
+  }
+
+  .error_text {
+    margin-top: 9px;
+  }
+
+  .verification_code_wrap .login_form_input {
+    margin-right: 192px;
+  }
+
+  .login_submit {
+    padding-top: 16px;
+  }
+
+  .login_footer {
+    margin-bottom: 113px;
+    width: 520px;
+  }
+
+  .login_footer li {
+    margin-bottom: 0;
+    padding: 0 10px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .login_footer li:not(:last-child) {
+    border-right: 1px solid #ADADAD;
+  }
+
+  .login_submit div {
+    margin: 0 auto;
+    width: 300px;
+  }
+
+  /* 注册 */
+  .register_container {
+    margin-top: 76px;
+  }
+
+  .register_container .login_title {
+    padding-bottom: 31px;
+  }
+
+  .vaild_email {
+    padding-bottom: 20px;
+  }
+
+  .vaild_code {
+    padding-bottom: 13px;
+  }
+
+  .send_code {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+  }
+
+  .register_container .verification_code_wrap .login_form_input {
+    width: auto;
+    margin-right: 200px;
+  }
+
+  .register_container .login_submit {
+    margin-top: 64px;
+  }
+
+  .register_container .login_submit div {
+    margin-bottom: 0;
+    width: 220px;
+  }
+
+  .register_container .btn_bg {
+    float: right;
+  }
+
+  .register_container .btn_bg_plain {
+    float: left;
+  }
+
+
 }
